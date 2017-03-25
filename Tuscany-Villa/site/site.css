@@ -1,2 +1,70 @@
 ﻿body {
 }
+
+footer {
+    background-color: #555;
+    color: white;
+    padding: 15px;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+.featureCol{
+    padding-left:0px;
+    padding-right:0px;
+}
+/* First row - Features styles */
+.featureBG {
+    margin: 0px;
+    width: auto;
+    height: 390px;
+    background-image: url(/images/tuscany-villas-sant-anna.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #CCC;
+    background-position: right;
+    
+}
+
+.featureTextBox {
+    
+    text-align: center;
+    background-color: rgba(85,85,85,0.7);
+    padding: 4px 4px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin:160px 140px 160px 140px;
+   
+}
+
+
+
+
+
+/*Map panel styles*/
+.featureMapBG {
+    margin: 0px;
+    width: auto;
+    height: 390px;
+    background-image: url(/images/Versilia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #CCC;
+    background-position: right;
+}
+
+.featureMapTextBox {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 4px 8px;
+    color: #666;
+    margin: 180px 30px 20px 30px;
+}
