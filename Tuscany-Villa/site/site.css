@@ -1,14 +1,16 @@
 ﻿
-@import url('https://fonts.googleapis.com/css?family=Mr+Dafoe');
+@import url('https://fonts.googleapis.com/css?family=Mr+Dafoe|Francois+One|Open+Sans');
 
 
 
 body {
+    font-family: 'Open Sans', sans-serif;
 }
 
 .jumbotron {
     color: #666666;
     text-transform: uppercase;
+    font-family: 'Francois One', sans-serif;
 }
 
     .jumbotron p {
@@ -17,41 +19,6 @@ body {
         text-transform: none;
     }
 
-footer {
-    background-color: #c7c7c7;
-    color: #444;
-    padding: 15px;
-    font-size: 12px;
-}
-
-.footerSocial {
-    float: right;
-    margin: 10px 0px 0px 40px;
-}
-
-    .footerSocial a:link, a:visited {
-        color: #444;
-        text-decoration: none;
-    }
-
-    .footerSocial a:hover {
-        color: #4eb2a0;
-        text-decoration: none;
-    }
-
-
-
-.footerInfo {
-    float: left;
-    width: 50%;
-    height: auto;
-    margin: 10px 0px 0px 40px;
-}
-
-    .footerInfo a:link, a:visited {
-        color: #444;
-        text-decoration: none;
-    }
 
 .navbar .navbar-nav {
     display: inline-block;
@@ -63,11 +30,12 @@ footer {
     text-align: center;
 }
 
+/* First row - Features styles */
 .featureCol {
     padding-left: 0px;
     padding-right: 0px;
 }
-/* First row - Features styles */
+
 .featureBG {
     margin: 0px;
     width: auto;
@@ -75,7 +43,7 @@ footer {
     background-image: url(/images/tuscany-villas-sant-anna.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    border: 1px solid #CCC;
+    border: 1px solid #cccccc;
     background-position: right;
 }
 
@@ -110,10 +78,10 @@ footer {
     margin: 180px 30px 20px 30px;
 }
 
-.featureMapTextBox a:link{
-    text-decoration:none;
-    color:#444;
-}
+    .featureMapTextBox a:link {
+        text-decoration: none;
+        color: #444;
+    }
 
 /*Sub content blocks styling*/
 .subClearPad {
@@ -129,13 +97,19 @@ footer {
     background-color: #ffffff;
     height: 250px;
 }
-.subColPoint a:link{
-    color:#4eb2a0
-}
 
-.subColPoint a:hover{
-    color:#444
-}
+    .subColPoint a:link {
+        color: #4eb2a0;
+    }
+
+    .subColPoint a:visited {
+        color: #4eb2a0;
+    }
+
+    .subColPoint a:hover {
+        color: #444;
+    }
+
 .subColTextBox {
     text-align: center;
     text-transform: uppercase;
@@ -175,7 +149,7 @@ footer {
     background-size: cover;
     border: 1px solid #cccccc;
 }
-/*Row 3 Styles*/
+/*Row 3 with info and cost boxes*/
 .subCol4 {
     margin: 0px;
     width: auto;
@@ -213,6 +187,37 @@ footer {
     padding: 14px 12px 0px 12px;
 }
 
+.starRate{
+height:30px;
+width:50px;
+position:relative;
+bottom:20px;
+left:10px;
+float:left;
+padding:5px;
+display:inline-block;
+background-color:#4eb2a0;
+color:#ffffff;
+margin:auto;
+
+}
+
+.searchBox{
+height:30px;
+width:50px;
+position:relative;
+bottom:10px;
+right:10px;
+float:right;
+padding:5px;
+display:inline-block;
+background-color:#4eb2a0;
+color:#ffffff;
+margin:auto;
+
+}
+
+
 .infoWrap {
     /*background-color: burlywood;*/
     width: 284px;
@@ -220,6 +225,7 @@ footer {
     margin: auto;
 }
 
+/*Text only box and button styles*/
 .subColCallOut {
     padding: 14px 40px 40px 40px;
     margin: 0px 0px 0px 0px;
@@ -227,6 +233,7 @@ footer {
     color: #666666;
     background-color: #ffffff;
     height: 250px;
+    border: 1px solid #cccccc;
 }
 
     .subColCallOut p {
@@ -235,10 +242,11 @@ footer {
 
     .subColCallOut .btn-default {
         border-color: #4eb2a0;
+        color: #4eb2a0;
     }
 
         .subColCallOut .btn-default:hover {
-            background-color: #4eb2a0;
+            background-color: #d1fbf4;
         }
 
 .subCol5 {
@@ -253,6 +261,7 @@ footer {
     padding-top: 164px;
 }
 
+/*Ratings and Review styles*/
 .subCol6 {
     margin: 0px;
     width: auto;
@@ -266,7 +275,6 @@ footer {
 }
 
 .subColRatings {
-    
     margin: auto;
     text-transform: uppercase;
     font-weight: bold;
@@ -274,7 +282,7 @@ footer {
     color: #ffffff;
     background-color: #4eb2a0;
     height: 250px;
-    padding:10px;
+    padding: 10px;
 }
 
     .subColRatings .btn-default {
@@ -285,14 +293,66 @@ footer {
         .subColRatings .btn-default:hover {
             background-color: #48a191;
         }
-.subColRatings h1{
-    font-size:4.0em;
-}
+
+    .subColRatings h1 {
+        font-size: 4.0em;
+    }
 
 .frameWrap {
     border: solid 1px #255c52;
-    width:auto;
-    height:230px;
+    width: auto;
+    height: 230px;
     margin: 0px;
     padding: 30px;
 }
+
+/*Footer and social styles*/
+footer {
+    background-color: #c7c7c7;
+    color: #444;
+    padding: 15px;
+    font-size: 12px;
+}
+
+.footerSocial {
+    float: right;
+    margin: 10px 0px 0px 40px;
+}
+
+    .footerSocial a:link {
+        color: #444;
+        text-decoration: none;
+    }
+
+    .footerSocial a:visited {
+        color: #444;
+        text-decoration: none;
+    }
+
+    .footerSocial a:hover {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+
+.footerInfo {
+    float: left;
+    width: 50%;
+    height: auto;
+    margin: 10px 0px 0px 40px;
+}
+
+    .footerInfo a:link {
+        color: #444;
+        text-decoration: none;
+    }
+
+    .footerInfo a:visited {
+        color: #444;
+        text-decoration: none;
+    }
+
+    .footerInfo a:hover {
+        color: #ffffff;
+        text-decoration: none;
+    }
