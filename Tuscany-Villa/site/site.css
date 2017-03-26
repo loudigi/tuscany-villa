@@ -1,11 +1,57 @@
-﻿body {
+﻿
+@import url('https://fonts.googleapis.com/css?family=Mr+Dafoe');
+
+
+
+body {
 }
 
-footer {
-    background-color: #555;
-    color: white;
-    padding: 15px;
+.jumbotron {
+    color: #666666;
+    text-transform: uppercase;
 }
+
+    .jumbotron p {
+        font-family: 'Mr Dafoe', cursive;
+        font-size: 42px;
+        text-transform: none;
+    }
+
+footer {
+    background-color: #c7c7c7;
+    color: #444;
+    padding: 15px;
+    font-size: 12px;
+}
+
+.footerSocial {
+    float: right;
+    margin: 10px 0px 0px 40px;
+}
+
+    .footerSocial a:link, a:visited {
+        color: #444;
+        text-decoration: none;
+    }
+
+    .footerSocial a:hover {
+        color: #4eb2a0;
+        text-decoration: none;
+    }
+
+
+
+.footerInfo {
+    float: left;
+    width: 50%;
+    height: auto;
+    margin: 10px 0px 0px 40px;
+}
+
+    .footerInfo a:link, a:visited {
+        color: #444;
+        text-decoration: none;
+    }
 
 .navbar .navbar-nav {
     display: inline-block;
@@ -17,9 +63,9 @@ footer {
     text-align: center;
 }
 
-.featureCol{
-    padding-left:0px;
-    padding-right:0px;
+.featureCol {
+    padding-left: 0px;
+    padding-right: 0px;
 }
 /* First row - Features styles */
 .featureBG {
@@ -31,22 +77,16 @@ footer {
     background-size: cover;
     border: 1px solid #CCC;
     background-position: right;
-    
 }
 
 .featureTextBox {
-    
     text-align: center;
     background-color: rgba(85,85,85,0.7);
     padding: 4px 4px;
     color: #ffffff;
     text-transform: uppercase;
-    margin:160px 140px 160px 140px;
-   
+    margin: 160px 140px 160px 140px;
 }
-
-
-
 
 
 /*Map panel styles*/
@@ -57,14 +97,202 @@ footer {
     background-image: url(/images/Versilia.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    border: 1px solid #CCC;
+    border: 1px solid #cccccc;
     background-position: right;
 }
 
 .featureMapTextBox {
     text-align: center;
+    text-transform: uppercase;
     background-color: #ffffff;
     padding: 4px 8px;
     color: #666;
     margin: 180px 30px 20px 30px;
+}
+
+.featureMapTextBox a:link{
+    text-decoration:none;
+    color:#444;
+}
+
+/*Sub content blocks styling*/
+.subClearPad {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.subColPoint {
+    padding: 40px 40px 40px 40px;
+    margin: 0px 0px 0px 0px;
+    text-transform: uppercase;
+    color: #4eb2a0;
+    background-color: #ffffff;
+    height: 250px;
+}
+.subColPoint a:link{
+    color:#4eb2a0
+}
+
+.subColPoint a:hover{
+    color:#444
+}
+.subColTextBox {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgba(85,85,85,0.7);
+    padding: 4px 8px;
+    color: #ffffff;
+    margin: 60px 50px 20px 50px;
+}
+
+.subCol1 {
+    margin: 0px;
+    width: auto;
+    height: 250px;
+    background-image: url(/images/Villa-Rucellai-Toscani-2750-2-348x348.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #cccccc;
+}
+
+
+.subCol2 {
+    margin: 0px;
+    width: auto;
+    height: 250px;
+    background-image: url(/images/Villa-Rucellai-Toscani-2812-2-348x348.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #cccccc;
+}
+
+.subCol3 {
+    margin: 0px;
+    width: auto;
+    height: 250px;
+    background-image: url(/images/Villa-Vanna-231-348x348.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #cccccc;
+}
+/*Row 3 Styles*/
+.subCol4 {
+    margin: 0px;
+    width: auto;
+    height: 250px;
+    background-image: url(/images/42-348x348.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #cccccc;
+    background-position: bottom;
+    padding-top: 164px;
+}
+
+.subColIconBox {
+    width: 220px;
+    height: 64px;
+    float: left;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgba(85,85,85,0.7);
+    padding: 1px 10px 4px 10px;
+    color: #ffffff;
+}
+
+.priceCube {
+    float: left;
+    background-color: #4eb2a0;
+    height: 64px;
+    width: 64px;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 14px 12px 0px 12px;
+}
+
+.infoWrap {
+    /*background-color: burlywood;*/
+    width: 284px;
+    height: 64px;
+    margin: auto;
+}
+
+.subColCallOut {
+    padding: 14px 40px 40px 40px;
+    margin: 0px 0px 0px 0px;
+    text-transform: uppercase;
+    color: #666666;
+    background-color: #ffffff;
+    height: 250px;
+}
+
+    .subColCallOut p {
+        text-transform: none;
+    }
+
+    .subColCallOut .btn-default {
+        border-color: #4eb2a0;
+    }
+
+        .subColCallOut .btn-default:hover {
+            background-color: #4eb2a0;
+        }
+
+.subCol5 {
+    margin: 0px;
+    width: auto;
+    height: 250px;
+    background-image: url(/images/3b-348x348.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #cccccc;
+    background-position: bottom;
+    padding-top: 164px;
+}
+
+.subCol6 {
+    margin: 0px;
+    width: auto;
+    height: 250px;
+    background-image: url(/images/314-348x348.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #cccccc;
+    background-position: bottom;
+    padding-top: 164px;
+}
+
+.subColRatings {
+    
+    margin: auto;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: .2em;
+    color: #ffffff;
+    background-color: #4eb2a0;
+    height: 250px;
+    padding:10px;
+}
+
+    .subColRatings .btn-default {
+        border-color: #255c52;
+        background-color: #4eb2a0;
+    }
+
+        .subColRatings .btn-default:hover {
+            background-color: #48a191;
+        }
+.subColRatings h1{
+    font-size:4.0em;
+}
+
+.frameWrap {
+    border: solid 1px #255c52;
+    width:auto;
+    height:230px;
+    margin: 0px;
+    padding: 30px;
 }
