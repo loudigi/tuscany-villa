@@ -19,17 +19,30 @@ body {
         text-transform: none;
     }
 
-
-.navbar .navbar-nav {
-    display: inline-block;
-    float: none;
-    vertical-align: top;
+.navbar {
+    margin-bottom: 0px;
 }
 
-.navbar .navbar-collapse {
-    text-align: center;
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+
+.navbar-brand {
+    padding: 0px;
 }
 
+.navbar-btn {
+    margin: 0px -15px 0px 0px;
+    border-radius: 0px;
+    padding: 14px 28px;
+    text-transform: uppercase;
+}
 /* First row - Features styles */
 .featureCol {
     padding-left: 0px;
@@ -54,8 +67,20 @@ body {
     color: #ffffff;
     text-transform: uppercase;
     margin: 160px 140px 160px 140px;
+    min-width: 200px;
 }
 
+.homeBox a:link {
+    color: #ffffff;
+}
+
+.homeBox a:visited {
+    color: #ffffff;
+}
+
+.homeBox a:hover {
+    color: #444;
+}
 
 /*Map panel styles*/
 .featureMapBG {
@@ -82,6 +107,9 @@ body {
         text-decoration: none;
         color: #444;
     }
+
+
+
 
 /*Sub content blocks styling*/
 .subClearPad {
@@ -126,6 +154,7 @@ body {
     background-image: url(/images/Villa-Rucellai-Toscani-2750-2-348x348.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: bottom;
     border: 1px solid #cccccc;
 }
 
@@ -137,6 +166,7 @@ body {
     background-image: url(/images/Villa-Rucellai-Toscani-2812-2-348x348.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: bottom;
     border: 1px solid #cccccc;
 }
 
@@ -147,6 +177,7 @@ body {
     background-image: url(/images/Villa-Vanna-231-348x348.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: bottom;
     border: 1px solid #cccccc;
 }
 /*Row 3 with info and cost boxes*/
@@ -187,36 +218,47 @@ body {
     padding: 14px 12px 0px 12px;
 }
 
-.starRate{
-height:30px;
-width:50px;
-position:relative;
-bottom:20px;
-left:10px;
-float:left;
-padding:5px;
-display:inline-block;
-background-color:#4eb2a0;
-color:#ffffff;
-margin:auto;
-
+.starRate {
+    height: 30px;
+    width: 50px;
+    position: relative;
+    bottom: 20px;
+    left: 10px;
+    float: left;
+    padding: 5px;
+    display: inline-block;
+    background-color: #4eb2a0;
+    color: #ffffff;
+    margin: auto;
 }
 
-.searchBox{
-height:30px;
-width:50px;
-position:relative;
-bottom:10px;
-right:10px;
-float:right;
-padding:5px;
-display:inline-block;
-background-color:#4eb2a0;
-color:#ffffff;
-margin:auto;
-
+.searchBox {
+    height: 30px;
+    width: 50px;
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+    float: right;
+    padding: 5px;
+    display: inline-block;
+    background-color: #4eb2a0;
+    color: #ffffff;
+    margin: auto;
 }
 
+.homeBox {
+    height: 30px;
+    width: 90px;
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+    float: right;
+    padding: 2px 0px 0px 0px;
+    display: inline-block;
+    background-color: #4eb2a0;
+    color: #ffffff;
+    margin: auto;
+}
 
 .infoWrap {
     /*background-color: burlywood;*/
